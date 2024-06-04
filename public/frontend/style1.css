@@ -1,0 +1,91 @@
+
+ /*https://youtu.be/AiaEqc9UMf8?si=4xVPK9FJ0r7A0hWu*/
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(Images/banner2.jpg);
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 20px;
+    box-shadow: inset -2px 2px 2px white;
+}
+
+.form-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+.main-user-inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.user-input-box {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 10px 0;
+    font-size: 15px;
+    color: white;
+
+}
+
+.gender-details-box {
+
+    font-size: 15px;
+    color: white;
+
+}
+
+.Form-submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.Form-submit-btn button {
+    padding: 5px 5px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+.user-input-box select {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    
+     } 
+
+
+     @media (max-width:1035px) {
+     .container {
+        width: 50%;
+    
+    }
+}

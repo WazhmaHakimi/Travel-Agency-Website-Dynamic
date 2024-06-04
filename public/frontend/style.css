@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  font-family: Arial, sans-serif;
+
+}
+
+section {
+
+  width: auto;
+  height: 100vh;
+}
+
+.background_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/bg.jpg');
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh);
+
+}
+
+
+
+
+
+
+
+
+
+
+nav {
+  height: 17%;
+  background-color: rgb(35, 172, 218);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+
+}
+
+nav .logo {
+  font-size: 30px;
+  color: black;
+  font-weight: 500;
+
+
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 1px;
+
+  padding: 8px 10px;
+  border-radius: 10px;
+  transition: all 0.3 ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: black;
+  background-color: lightblue;
+}
+
+nav .Menu_btn i {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+
+/*section nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: hwb(0 100% 0%);
+  padding: 20px;
+  width: 100%;
+
+}
+
+section nav .logo img {
+  width: 100px;
+  cursor: pointer;
+  margin: 7px 0;
+
+}
+
+section nav ul {
+  list-style: none;
+
+}
+
+section nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+section nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 200;
+  font-size: 15px;
+  transition: 0.1s;
+
+}
+
+section nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: rgb(255, 55, 88);
+  display: block;
+  transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after {
+  width: 100%;
+}
+
+section nav ul li a:hover {
+  color: blue;
+
+}*/
+
+
+
+div .para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 350px;
+  font-size: x-large;
+  color: white;
+
+
+}
+
+div.bt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: bold;
+  padding: 25px 26px;
+  margin: 20px 20px;
+
+
+}
+
+div.bt a {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  transition: color 2s;
+}
+
+div.bt a:hover {
+  background-color: rgb(50, 50, 161);
+
+}
+
+.image {}
+
+.about_text h1 span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Destinations {
+  padding: 100px 0;
+
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.Destinations {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.Destinations h1 {
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.Destinations h1 span {
+  color: blue;
+  margin-left: 15px;
+  font-family: mv boli;
+}
+
+.Destinations h1 span ::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: blue;
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+
+.Destinations .Destinations_box {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.Destinations .Destinations_box .Destinations_card {
+  width: 305px;
+  height: 480px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.Destinations .Destinations_box .Destinations_card .Destinations_image {
+  width: 300px;
+  height: 245px;
+  margin: 0 auto;
+  overflow: hidden;
+
+
+}
+
+.Destinations .Destinations_box .Destinations_card .Destinations_image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+
+.Destinations .Destinations_box .Destinations_card .Destinations_image:hover img {
+  transform: scale(1.1);
+
+
+}
+
+.Destinations .Destinations_box .Destinations_card .small_card {
+
+  width: 45px;
+  height: 45px;
+  float: right;
+  position: relative;
+  top: -240px;
+  right: -8px;
+  opacity: 1;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+
+.Destinations .Destinations_box .Destinations_card:hover .small_card {
+  position: relative;
+  top: -240px;
+  right: 220px;
+  opacity: 1;
+}
+
+.Destinations.Destinations_box .Destinations_card .Destinations_info h2 {
+  width: 60%;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  font-size: 25px;
+  color: blue;
+}
+
+.Destinations .Destinations_box .Destinations_card .Destinations_info p {
+  text-align: center;
+  margin-top: 8px;
+  line-height: 21px;
+}
+
+.Destinations .Destinations_box .Destinations_card .Destinations_info h3 {
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.Destinations .Destinations_box .Destinations_card .Destinations_info .Destinations_icon {
+  color: blue;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+a.Destinations_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: blue;
+  background: wheat;
+  padding: 8px 10px;
+  margin: 0 80px;
+  transition: 0.3s;
+
+
+}
+
+.about {
+  width: 100%;
+  height: 100%;
+  padding: 70px 0;
+}
+
+.about .about_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.about .about_main .about_text h1 span {
+  color: blue;
+  margin-right: 15px;
+  font-family: mv boli;
+  justify-content: center;
+  text-align: center;
+}
+
+.about .about_main .about_text h1 {
+  font-size: 55px;
+  position: relative;
+  bottom: 50px;
+}
+
+.about .about_main .about_text h3 {
+  font-size: 30px;
+  margin: 0 0 50px 0;
+}
+
+.about .about_main .about_text p {
+  width: 1000px;
+  text-align: justify;
+  margin-right: 30px;
+  line-height: 22px;
+}
+
+#Contact {
+  width: 100%;
+  height: 100vh;
+  padding: 70px 0;
+  background-image: url(image/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.Contact h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 55px;
+}
+
+.Contact h1 span {
+  color: blue;
+  margin-right: 15px;
+  font-family: mv boli;
+}
+
+.Contact h1 span::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: red;
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+
+.Contact .Contact_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Contact .Contact_main .Contact_image img {
+  width: 600px;
+}
+
+.Contact .Contact_main form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 10px;
+}
+
+.Contact .Contact_main form .input p {
+  line-height: 25px;
+}
+
+.Contact .Contact_main form .input {
+  margin: 5px;
+}
+
+.Contact .Contact_main form .input input {
+  width: 300px;
+  height: 35px;
+  padding: 0 10px;
+  border: 2px solid #cccccc;
+  background: #eeeeee;
+  outline: none;
+  border-radius: 3px;
+}
+
+.Contact .Contact_main form .input input:focus {
+  border: 2px solid blue;
+}
+
+.Contact .Contact_main form .Contact_btn {
+  padding: 10px 0;
+  background: blue;
+  color: white;
+  width: 40%;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+#click {
+  display: none;
+}
+
+@media (max-width:1035px) {
+
+  div .para {
+    padding-top: 200px;
+    font-size: large;
+    color: white;
+  }
+
+  nav {
+    width: auto;
+  }
+
+  nav .Menu_btn i {
+    display: block;
+  }
+
+  #click :checked~.Menu_btn i:before {
+    content: \f00d;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: rgb(35, 172, 218);
+    height: 85vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+
+  }
+
+  #click:checked~ul {
+    left: 0%;
+  }
+
+
+  nav ul li {
+    margin: 40px 0;
+
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  .Destinations .Destinations_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+
+  section nav {
+    width: auto;
+
+
+  }
+
+  .Destinations h1 {
+    font-size: 45px;
+  }
+
+  div #Destinations.Destinations {
+    height: auto;
+    flex-direction: column;
+
+
+  }
+
+  .about .about_main .about_text h1 span {
+    padding-right: 20%;
+    font-size: 50px;
+
+
+  }
+
+  .about .about_main .about_text p {
+    padding: 0 40px;
+    width: 100%;
+  }
+
+  .about .about_main .about_text h3 {
+    font-size: 20px;
+  }
+
+  #my-pic {
+    display: none;
+  }
+
+  .Contact h1 {
+    font-size: 35px;
+  }
+
+  .Contact .Contact_main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+}
